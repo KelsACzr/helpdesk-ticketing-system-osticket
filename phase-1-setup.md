@@ -29,7 +29,7 @@ Installed Windows Server 2022 (21H2) | Build 20348.587
 ## 2. Prerequisite Program Installations
 
 ### 2.1 IIS Installation
-Installed IIS using the Server Manager to set the Server Roles. Web Server (IIS), IIS Management Console and CGI were enabled.
+Installed IIS using the Server Manager to set the Server Roles. Web Server (IIS), IIS Management Console, and CGI were enabled.
 
 ![Enable IIS CGI](screenshots/IIS%20and%20CGI%20install.png)
 
@@ -46,7 +46,7 @@ PHP folder was created, and files were extracted to C:\PHP.
 
 ![PHP Folder](screenshots/PHP%20Folder.png)
 
-The PHP Manager for IIS was installed.
+The PHP Manager for IIS was installed, and PHP was registered on the manager.
 
 ![PHP Manager Install](screenshots/PHP%20manager%20installed.png)
 
@@ -69,4 +69,5 @@ MariaDB and HeidiSQL were extracted from the same package and installed.
 
 ![Rewrite](screenshots/Rewrite%20installation.png)
 
-
+## 3. osTicket Installation
+Next, osTicket was installed, the required permissions were assigned, and the first user was registered.
