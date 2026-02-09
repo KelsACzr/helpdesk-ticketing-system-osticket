@@ -9,9 +9,9 @@ This section explains the required prerequisites and installation process for se
 - Windows Server 2022 (21H2) | Build 20348.587
 ## List of Prerequisites
 - Win Server Virtual Machine Setup.
-- Install & Enable IIS.
+- Install IIS.
 - Install CGI (Common Gateway Interface) so IIS can communicate effectively with PHP.
-- Install PHP v8.5.1 and PHP Manager.
+- Install PHP v8.3.39 and PHP Manager for IIS.
 - Install Visual C++ Redistributable for PHP compilation and runtime environment.
 - Install MariaDB and HeidiSQL
 - Install Rewrite for URL customization and redirection.
@@ -39,6 +39,19 @@ Installed IIS using the Server Manager to set the Server Roles. Web Server (IIS)
 IIS was tested to confirm that it works using Edge > http://localhost
 
 ![IIS Install Confirmed](screenshots/5%20IIS%20Test%20Complete.png)
+
+### 2.2 PHP and PHP Manager Installation
+PHP folder was created, and files were extracted to C:\PHP. 
+
+
+
+The PHP Manager for IIS was installed.
+
+![PHP Manager Install](screenshots/PHP%20manager%20installed.png)
+
+![PHP Manager on IIS](screenshots/PHP%20Manager%20for%20IIS.png)
+
+The PHP installation was tested using Edge > localhost/info.php to ensure that PHP and IIS are working correctly.
 
 
 
