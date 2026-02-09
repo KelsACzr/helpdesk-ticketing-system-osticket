@@ -69,22 +69,25 @@ MariaDB and HeidiSQL were extracted from the same package and installed.
 
 ![Rewrite](screenshots/Rewrite%20installation.png)
 
-## 3. osTicket Database creation & Installation
-Next, the database was created, and osTicket was installed. the required permissions were assigned, and the first user was registered.
+## 3. osTicket Database Creation & Installation
 
 ### 3.1 The osTicket database was created in MariaDB with a New User
 
-New database created in MariaDB named 'osticket':  CREATE DATABASE osticket;
-Confirmed that the new database is present: SHOW DATABASES;
+- New database created in MariaDB named 'osticket':  CREATE DATABASE osticket;
+- Confirmed that the new database is present: SHOW DATABASES;
 
 ![osticket DB creation](screenshots/10%20osticket%20database%20created%20in%20MariaDB.png)
 
-A new admin user for osTicket was created: CREATE USER 'osticketuser'@'localhost' IDENTIFIED BY 'A Very Strong Password';
-Username: osticketuser
-Password: (********************)
-All privileges were granted to this admin user: GRANT ALL PRIVILEGES ON osticket.* TO 'osticketuser'@'localhost';
+- A new admin user for osTicket was created:
+  - CREATE USER 'osticketuser'@'localhost' IDENTIFIED BY 'A Very Strong Password';
+  - Username: osticketuser
+  - Password: (********************)
+- All privileges were granted to this admin user:
+  - GRANT ALL PRIVILEGES ON osticket.* TO 'osticketuser'@'localhost';
+  - FLUSH PRIVILEGES;
+- Confirmed that the new user exists: SELECT User, Host FROM mysql.user;
 
+![new admin user](screenshots/11%20New%20OS%20Ticket%20User%20Created.png)
 
-
-
+### 3.2 Set Permissions for osTicket
 
