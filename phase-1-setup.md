@@ -25,3 +25,20 @@ Installed Windows Server 2022 (21H2) | Build 20348.587
 
 ![Win Server Install](screenshots/2%20Win%20Server%202022%20Installation.png)
 
+## 2. Prerequisite Program Installations
+
+### 2.1 IIS Installation
+Installed IIS using the Server Manager to set the Server Roles. Web Server (IIS), IIS Management Console and CGI were enabled.
+
+![Enable IIS CGI](screenshots/IIS%20and%20CGI%20install.png)
+
+![IIS Installation on Server](screenshots/3%20IIS%20Installation%20on%20the%20Server.png)
+
+![IIS Install Completed](screenshots/4%20IIS%20Installation%20Completed.png)
+
+IIS was tested to confirm that it works using Edge > http://localhost
+
+![IIS Install Confirmed](screenshots/5%20IIS%20Test%20Complete.png)
+
+
+
