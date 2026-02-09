@@ -6,7 +6,7 @@ This section explains the required prerequisites and installation process for se
 - Oracle VirtualBox
 - Internet Information Services (IIS)
 ## Operating System
-- Windows Server 2022 - 21H2 | Build 20348.587
+- Windows Server 2022 (21H2) | Build 20348.587
 ## List of Prerequisites
 - Win Server Virtual Machine Setup.
 - Install & Enable IIS.
@@ -15,3 +15,13 @@ This section explains the required prerequisites and installation process for se
 - Install Visual C++ Redistributable for PHP compilation and runtime environment.
 - Install MariaDB and HeidiSQL
 - Install Rewrite for URL customization and redirection.
+## 1. Virtual Machine Creation & Win Server Installation
+
+Created a virtual machine using Oracle VirtualBox.
+
+![Virtual Machine Creation](screenshots/1%20Creating%20a%20VM.png)
+
+Installed Windows Server 2022 (21H2) | Build 20348.587
+
+![Win Server Install](screenshots/2%20Win%20Server%202022%20Installation.png)
+
