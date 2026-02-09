@@ -13,8 +13,9 @@ This section explains the required prerequisites and installation process for se
 - Install CGI (Common Gateway Interface) so IIS can communicate effectively with PHP.
 - Install PHP v8.3.39 and PHP Manager for IIS.
 - Install Visual C++ Redistributable for PHP compilation and runtime environment.
-- Install MariaDB and HeidiSQL
+- Install MariaDB v12.1.2 and HeidiSQL(x64)
 - Install Rewrite for URL customization and redirection.
+  
 ## 1. Virtual Machine Creation & Win Server Installation
 
 Created a virtual machine using Oracle VirtualBox.
@@ -40,10 +41,10 @@ IIS was tested to confirm that it works using Edge > http://localhost
 
 ![IIS Install Confirmed](screenshots/5%20IIS%20Test%20Complete.png)
 
-### 2.2 PHP and PHP Manager Installation
+### 2.2 PHP, PHP Manager & Visual C++ Installation
 PHP folder was created, and files were extracted to C:\PHP. 
 
-
+![PHP Folder](screenshots/PHP%20Folder.png)
 
 The PHP Manager for IIS was installed.
 
@@ -53,5 +54,19 @@ The PHP Manager for IIS was installed.
 
 The PHP installation was tested using Edge > localhost/info.php to ensure that PHP and IIS are working correctly.
 
+![PHP Functional](screenshots/8%20PHP-Working.png)
+
+Visual C++ Redistributable was installed next.
+
+![VisualC++ Installed](screenshots/6%20Visual%20C%2B%2B%20Installation.png)
+
+### 2.3 MariaDB and HeidiSQL Installation
+MariaDB and HeidiSQL were extracted from the same package and installed.
+
+![Maria and Heidi](screenshots/Maria%20and%20Heidi.png)
+
+### 2.4 Rewrite Installation
+
+![Rewrite](screenshots/Rewrite%20installation.png)
 
 
