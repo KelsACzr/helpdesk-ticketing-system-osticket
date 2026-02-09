@@ -109,11 +109,20 @@ The admin user was registered on osTicket to complete the installation:
 
 ![osTicket install completed](screenshots/13%20OS%20Ticket%20Installation%20Completed.png)
 
-## 4. Test Links for osTicket Login
+## 4. Test Links for osTicket Login & Clean Up
 
-The Agent login was tested using the link http://localhost/osTicket/scp/login.php - Once the page loaded, the login was successful.
+The Agent login page was tested using the URL http://localhost/osticket/scp/login.php 
 
 ![osTicket agent page](screenshots/14%20OS%20Ticket%20Login%20Screen.png)
 
+Once the page loaded, the login was successful.
+
 ![osTicket agent login](screenshots/15%20OS%20Ticket%20Successful%20Login.png)
 
+The End User page was tested using URL:http://localhost/osticket/
+
+![end user url](screenshots/End%20user%20url.png)
+
+### 4.1 Security Clean Up
+
+The 'setup' folder was deleted from the install folder C:\inetpub\wwwroot\osTicket\setup, and the permissions for the 'ost-config.php' file were set to Read Only in the osTicket install folder: C:\inetpub\wwwroot\osticket\include
