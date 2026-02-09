@@ -89,5 +89,31 @@ MariaDB and HeidiSQL were extracted from the same package and installed.
 
 ![new admin user](screenshots/11%20New%20OS%20Ticket%20User%20Created.png)
 
-### 3.2 Set Permissions for osTicket
+### 3.2 Extract Files & Set Permissions for osTicket
+
+osTicket v1.18.2 was downloaded, and the files were extracted and copied to the install folder on the C:\ drive: C:\inetpub\wwwroot\osticket
+- Permissions were set on the folder C:\inetpub\wwwroot\osticket\include
+
+![osTicket permissions set](screenshots/12%20%20Set%20Permissions%20for%20OS%20Ticket.png)
+
+### 3.3 Load osTicket Setup Page and Complete Installation
+
+The osTicket setup page (http://localhost/osticket) loaded successfully, indicating that the platform meets all the requirements to complete the installation.
+
+![osTicket setup page](screenshots/12%20OS%20Ticket%20Ready%20to%20install.png)
+
+The admin user was registered on osTicket to complete the installation:
+- Email: admin@localhost
+- Username: kadmin01
+- Password: (********************)
+
+![osTicket install completed](screenshots/13%20OS%20Ticket%20Installation%20Completed.png)
+
+## 4. Test Links for osTicket Login
+
+The Agent login was tested using the link http://localhost/osTicket/scp/login.php - Once the page loaded, the login was successful.
+
+![osTicket agent page](screenshots/14%20OS%20Ticket%20Login%20Screen.png)
+
+![osTicket agent login](screenshots/15%20OS%20Ticket%20Successful%20Login.png)
 
