@@ -49,9 +49,13 @@ This section explains the post-installation configuration steps for osTicket, wh
  
 ## 1. System Configuration
 The platform settings were configured via the Admin Panel. The purpose is to ensure consistency and standardization in the support environment.
-[*Admin Panel → Settings → System*]
+[*Admin Panel → Settings*]
 
-The following settings were applied; 
+Fictional Company Name: Shopper's Rite LLC.
+
+![company profile](screenshots/company%20profile.png)
+
+The following **System** settings were applied; 
 - Helpdesk Name: Helpdesk Lab v1.0
 - Default Department: Support
 - Default Time Zone: America / New_ York
