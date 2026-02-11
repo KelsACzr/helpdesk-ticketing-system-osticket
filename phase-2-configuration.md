@@ -16,14 +16,18 @@ This section explains the post-installation configuration steps for osTicket, wh
   -  Network Support
   -  Application Support
   -  Sales
- 
-- **Role-Based Access Control (RBAC)**
-- **Service Level Agreements (SLAs)**
-  - Priority Levels & Resolution Times:
-    - P1: Critical(2 hours)
-    - P2: High(8 hours)
-    - P3: Normal(24 hours)
-    - P4: Low (48 hours)
+  
+  - **Service Level Agreements (SLAs)**
+    - Priority Levels & Resolution Times:
+      - P1: Critical(2 hours) - Company-wide issues which impact reveneue i.e., Network, Server, or VPN outages that affect all in-house and remote staff.
+      - P2: High(8 hours) - Department-specific issues, i.e., application errors, workstation issues, and email access issues.
+      - P3: Normal(12 hours) - Non-critical issues affecting the end-users, i.e., access requests, workstation problems, printer issues.
+      - P4: Low (24 hours) - For standard user/client requests, i.e., questions and minor changes.
+
+- **Role-Based Access Control (RBAC)** role assignment and department access configuration.
+- **Agent Setup** - 
+  - Super Admin
+  - Standard User 
     
 - **Structured Help Topics** - each topic was mapped to a specific department with its default SLA for ticket categorization
   - Password Reset
@@ -34,10 +38,6 @@ This section explains the post-installation configuration steps for osTicket, wh
   - New Employee Onboarding
   - Feedback
   - General Inquiry
-    
-- **Agent Setup** - role assignment and department access configuration.
-  - Super Admin
-  - Standard User 
 
 - **Ticket Workflow Configuration of Lifecycle Stages:**
   - Open
@@ -81,3 +81,19 @@ Next, the Ticket Settings were configured as follows: [*Admin Panel → Settings
 ![osticket ticket settings](screenshots/osticket%20settings.png)
 
 ## 2. Department Structure for Ticket Routing
+The structured departments were created under the Default Department: Support [*Admin → Staff → Departments*] - the Sales Team uses a separate mailbox.
+
+![departments](screenshots/departments.png)
+
+### 2.1 Service Level Agreements (SLAs)
+The following SLAs were set and assigned to each department. [*Admin → Manage → SLA*]
+
+![SLAs Set](screenshots/17%20SLAs%20Set.png)
+  
+- **SLAs by Department**
+  - Technical Support → P2 – High (8 hours)
+  - Network Support → P1 – Critical (2 hours)
+  - Application Support → P2 – High (8 hours)
+  - Sales → P3 – Normal (24 hours)
+
+  ![tech support SLA](screenshots/Tech%20Support%20SLA.png)
