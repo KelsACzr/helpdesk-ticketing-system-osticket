@@ -31,20 +31,15 @@ This section explains the post-installation configuration steps for osTicket, wh
   - General Inquiry
   - VPN Outage
 
-- **5. Ticket Workflow Configuration of Lifecycle Stages:**
-  - Open
-  - Assigned
-  - In Progress
-  - On Hold
-  - Resolved
-  - Closed
-    
-- **6.Service Level Agreements (SLAs)**
+- **5.Service Level Agreements (SLAs)**
     - Priority Levels & Resolution Times:
       - P1: Critical(2 hours) - Company-wide issues which impact reveneue i.e., Network, Server, or VPN outages that affect all in-house and remote staff.
       - P2: High(8 hours) - Department-specific issues, i.e., application errors, workstation issues, and email access issues.
       - P3: Normal(12 hours) - Non-critical issues affecting the end-users, i.e., access requests, workstation problems, printer issues.
       - P4: Low (24 hours) - For standard user/client requests, i.e., questions and minor changes.
+     
+- **6. User Onboarding**
+  - A new user [Jane Mollineau] was configured for the Tier 1 Technical Support Team.
       
 ## 1. System Configuration
 The platform settings were configured via the Admin Panel. The purpose is to ensure consistency and standardization in the support environment.
@@ -110,20 +105,12 @@ The end-user will then access the Support Centre to open a new ticket and select
 
 ![support center topics](screenshots/end%20-user%20help%20topics.png)
 
-## 5. Ticket Workflow Configuration of Lifecycle Stages:
-  - Open
-  - Assigned
-  - In Progress
-  - On Hold
-  - Resolved
-  - Closed
-
-## 6. Service Level Agreements (SLAs)
+## 5. Service Level Agreements (SLAs)
 The following SLAs were set and assigned to each department. [*Admin → Manage → SLA*]
 
 ![SLAs Set](screenshots/17%20SLAs%20Set.png)
   
-### 6.1 SLAs by Department
+### 5.1 SLAs by Department
   - Technical Support → P2 – High (8 hours)
   - Network Support → P1 – Critical (2 hours)
   - Application Support → P2 – High (8 hours)
@@ -131,6 +118,33 @@ The following SLAs were set and assigned to each department. [*Admin → Manage 
 
 ![tech support SLA](screenshots/Tech%20Support%20SLA.png)
 
+## 6. User Onboarding
+
+**Credentials**
+- User 'Jane Mollineau' was created. [*Admin → Agents → Agents*]
+- Username: jmollineau
+- Password: Sent to the User's Email
+
+![jane creds](screenshots/Jane%201.png)
+
+**Jane's Access Level**
+- Department: Support/ Technical Support
+- Role: Helpdesk Technician (Tier 1 Support)
+
+![jane access](screenshots/Jane%202.png)
+
+**Jane's Permissions**
+This account was configured for limited permissions to make any major changes. 
+
+![jane permissions 1](screenshots/Jane%20Permissions%201.png)
+
+![jane permissions 2](screenshots/Jane%20Permissions%202.png)
+
+![jane permissions 3](screenshots/Jane%20Permissions%203.png)
+
+**Jane's Team Assignment**
+- Jane was assigned to the Team: "T1 Technical Support"
+![jane team assign](screenshots/Jane%20Team%20Assignment%203.png)
 
 ## Final Considerations
 - User Session Timeout: the *User Session Timeout* was changed from 30 minutes to 0 to avoid having to sign in again and encounter the error shown below;
