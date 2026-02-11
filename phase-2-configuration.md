@@ -9,7 +9,7 @@ This section explains the post-installation configuration steps for osTicket, wh
 ## Operating System
 - Windows Server 2022 (21H2) | Build 20348.587
 
-## 1. Configuration Tasks
+## Configuration Tasks
 - System Configuration: Company name, branding, date, and timezone configuration.
 - Department Structure for ticket routing:
   -  Technical Support
@@ -36,4 +36,15 @@ This section explains the post-installation configuration steps for osTicket, wh
   - General Inquiry
     
 - Agent Setup - role assignment and department access configuration.
-- Ticket Workflow Configuration
+  - Super Admin
+  - Standard User 
+
+- Ticket Workflow Configuration of lifecycle stages:
+  - Open
+  - Assigned
+  - Inprogress
+  - On Hold
+  - Resolved
+  - Closed
+ 
+## 1. System Configuration
