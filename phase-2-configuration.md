@@ -10,22 +10,22 @@ This section explains the post-installation configuration steps for osTicket, wh
 - Windows Server 2022 (21H2) | Build 20348.587
 
 ## Configuration Tasks
-- System Configuration: Company name, branding, date, and timezone configuration.
-- Department Structure for ticket routing:
+- **System Configuration:** Company name, default department, branding, date, and timezone configuration.
+- **Department Structure for Ticket Routing:**
   -  Technical Support
   -  Network Support
   -  Application Support
   -  Sales
  
-- Role-Based Access Control (RBAC)
-- Service Level Agreements (SLAs)
+- **Role-Based Access Control (RBAC)**
+- **Service Level Agreements (SLAs)**
   - Priority Levels & Resolution Times:
     - P1: Critical(2 hours)
     - P2: High(8 hours)
     - P3: Normal(24 hours)
     - P4: Low (48 hours)
     
-- Structured Help Topics - each topic was mapped to a specific department with its default SLA for ticket categorization
+- **Structured Help Topics** - each topic was mapped to a specific department with its default SLA for ticket categorization
   - Password Reset
   - Email Issue
   - Network Connectivity
@@ -35,11 +35,11 @@ This section explains the post-installation configuration steps for osTicket, wh
   - Feedback
   - General Inquiry
     
-- Agent Setup - role assignment and department access configuration.
+- **Agent Setup** - role assignment and department access configuration.
   - Super Admin
   - Standard User 
 
-- Ticket Workflow Configuration of lifecycle stages:
+- **Ticket Workflow Configuration of Lifecycle Stages:**
   - Open
   - Assigned
   - Inprogress
@@ -48,3 +48,31 @@ This section explains the post-installation configuration steps for osTicket, wh
   - Closed
  
 ## 1. System Configuration
+The platform settings were configured via the Admin Panel. The purpose is to ensure consistency and standardization in the support environment.
+[*Admin Panel → Settings → System*]
+
+The following settings were applied; 
+- Helpdesk Name: Helpdesk Lab v1.0
+- Default Department: Support
+- Default Time Zone: America / New_ York
+- Date & Time Format: Locale Defaults
+- Default Schedule:  Monday - Friday 8 am-5 pm with U.S. Holidays
+
+![osticket local settings](screenshots/osticket%20local%20settings.png)
+
+Next, the Ticket Settings were configured as follows: *Admin Panel → Settings → Tickets*
+
+- Default Ticket Number format: HDLV1##
+- Default Ticket Number Sequence: General Tickets with an increment of 1
+
+![osticket sequence](screenshots/osticket%20sequence.png)
+
+- Default Status: Open
+- Default Priority: Normal
+- Default Help Topic: General Inquiry
+- Maximum Open Tickets: 5
+- Human Verification: Enabled
+
+![osticket local settings](screenshots/osticket%20local%20settings.png)
+
+## 2. Department Structure for Ticket Routing
