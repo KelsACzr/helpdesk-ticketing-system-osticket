@@ -96,10 +96,12 @@ The following SLAs were set and assigned to each department. [*Admin → Manage 
 ![tech support SLA](screenshots/Tech%20Support%20SLA.png)
 
 ### 2.2 Roles & Permissions (Access Control)
-These 4 users were assigned permissions based on their role to demonstrate user privilege and operational control [*Admin → Staff → Roles*]
-- Helpdesk Technician (Tecni)
-- Senior Technician
-- IT Manager
-- Sales Executive
+These 4 roles were assigned permissions based on their department to demonstrate user privilege and operational control [*Admin → Staff → Roles*]
+- Helpdesk Technician (Tier 1 Support):  Can handle tickets assigned to the Technical Support Department only. No access to make advanced changes.
+- Senior Technician (Tier 2 Support): Handles escalated queries assigned to the Technical Support Department only, without full access.
+- IT Manager (Administrator Level):  Full Access to all permissions across all departments.
+- Sales Executive: Can handle tickets assigned to the Sales Department only.
+
+![Senior Tech Access](screenshots/Tier%202%20%20Ticket%20Permissions.png)
 
 
