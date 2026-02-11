@@ -10,7 +10,7 @@ This section explains the post-installation configuration steps for osTicket, wh
 - Windows Server 2022 (21H2) | Build 20348.587
 
 ## Configuration Tasks
-- **System Configuration:** Company name, default department, branding, date, and timezone configuration.
+- **System Configuration:** Company name, default department, ticket settings, date, and timezone configuration.
 - **Department Structure for Ticket Routing:**
   -  Technical Support
   -  Network Support
@@ -60,7 +60,7 @@ The following settings were applied;
 
 ![osticket local settings](screenshots/osticket%20local%20settings.png)
 
-Next, the Ticket Settings were configured as follows: *Admin Panel → Settings → Tickets*
+Next, the Ticket Settings were configured as follows: [*Admin Panel → Settings → Tickets*]
 
 - Default Ticket Number format: HDLV1##
 - Default Ticket Number Sequence: General Tickets with an increment of 1
@@ -69,10 +69,11 @@ Next, the Ticket Settings were configured as follows: *Admin Panel → Settings 
 
 - Default Status: Open
 - Default Priority: Normal
+- Default SLA: Level 4 - Low (24 Hours - Active)
 - Default Help Topic: General Inquiry
 - Maximum Open Tickets: 5
-- Human Verification: Enabled
+- Human Verification: Enabled -  to avoid time wastage on spammy or potentially dangerous tickets
 
-![osticket local settings](screenshots/osticket%20local%20settings.png)
+![osticket ticket settings](screenshots/osticket%20settings.png)
 
 ## 2. Department Structure for Ticket Routing
