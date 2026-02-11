@@ -133,11 +133,11 @@ The following SLAs were set and assigned to each department. [*Admin → Manage 
 
 
 ## Final Considerations
-- User Session Timeout: The User Session Timeout* was changed from 30 minutes to 0 to avoid having to sign in again and encounter the error shown below;
+- User Session Timeout: the *User Session Timeout* was changed from 30 minutes to 0 to avoid having to sign in again and encounter the error shown below;
 
-![tech support SLA](screenshots/Tech%20Support%20SLA.png)
+![osticket login error](screenshots/osticker%20login%20error.png)
 
-![tech support SLA](screenshots/Tech%20Support%20SLA.png)
+![user session timeout](screenshots/User%20Session%20Timeout.png)
 
 
 
