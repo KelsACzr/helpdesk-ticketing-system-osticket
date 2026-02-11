@@ -24,10 +24,7 @@ This section explains the post-installation configuration steps for osTicket, wh
       - P3: Normal(12 hours) - Non-critical issues affecting the end-users, i.e., access requests, workstation problems, printer issues.
       - P4: Low (24 hours) - For standard user/client requests, i.e., questions and minor changes.
 
-- **Role-Based Access Control (RBAC)** role assignment and department access configuration.
-- **Agent Setup** - 
-  - Super Admin
-  - Standard User 
+- **Roles & Permissions** agent role assignment and department access configuration.
     
 - **Structured Help Topics** - each topic was mapped to a specific department with its default SLA for ticket categorization
   - Password Reset
@@ -81,7 +78,7 @@ Next, the Ticket Settings were configured as follows: [*Admin Panel → Settings
 ![osticket ticket settings](screenshots/osticket%20settings.png)
 
 ## 2. Department Structure for Ticket Routing
-The structured departments were created under the Default Department: Support [*Admin → Staff → Departments*] - the Sales Team uses a separate mailbox.
+The structured departments were created under the Default Department: Support [*Admin → Agents → Departments*] - the Sales Team uses a separate mailbox.
 
 ![departments](screenshots/departments.png)
 
@@ -96,4 +93,13 @@ The following SLAs were set and assigned to each department. [*Admin → Manage 
   - Application Support → P2 – High (8 hours)
   - Sales → P3 – Normal (24 hours)
 
-  ![tech support SLA](screenshots/Tech%20Support%20SLA.png)
+![tech support SLA](screenshots/Tech%20Support%20SLA.png)
+
+### 2.2 Roles & Permissions (Access Control)
+These 4 users were assigned permissions based on their role to demonstrate user privilege and operational control [*Admin → Staff → Roles*]
+- Helpdesk Technician (Tecni)
+- Senior Technician
+- IT Manager
+- Sales Executive
+
+
