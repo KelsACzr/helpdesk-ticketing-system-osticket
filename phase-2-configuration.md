@@ -10,40 +10,42 @@ This section explains the post-installation configuration steps for osTicket, wh
 - Windows Server 2022 (21H2) | Build 20348.587
 
 ## Configuration Tasks
-- **System Configuration:** Company name, default department, ticket settings, date, and timezone configuration.
-- **Department Structure for Ticket Routing:**
+- ** 1. System Configuration:** Company name, default department, ticket settings, date, and timezone configuration.
+  
+- ** 2. Roles & Permissions:** user role assignment and department access configuration.
+  
+- ** 3. Department Structure for Ticket Routing:**
   -  Technical Support
   -  Network Support
   -  Application Support
   -  Sales
-  
-  - **Service Level Agreements (SLAs)**
-    - Priority Levels & Resolution Times:
-      - P1: Critical(2 hours) - Company-wide issues which impact reveneue i.e., Network, Server, or VPN outages that affect all in-house and remote staff.
-      - P2: High(8 hours) - Department-specific issues, i.e., application errors, workstation issues, and email access issues.
-      - P3: Normal(12 hours) - Non-critical issues affecting the end-users, i.e., access requests, workstation problems, printer issues.
-      - P4: Low (24 hours) - For standard user/client requests, i.e., questions and minor changes.
 
-- **Roles & Permissions** agent role assignment and department access configuration.
-    
-- **Structured Help Topics** - each topic was mapped to a specific department with its default SLA for ticket categorization
+- ** 4. Structured Help Topics** - the following topics were listed:
   - Password Reset
   - Email Issue
-  - Network Connectivity
+  - Network Outage
   - Unable to Print
   - Access Request
   - New Employee Onboarding
   - Feedback
   - General Inquiry
+  - VPN Outage
 
-- **Ticket Workflow Configuration of Lifecycle Stages:**
+- ** 5. Ticket Workflow Configuration of Lifecycle Stages:**
   - Open
   - Assigned
-  - Inprogress
+  - In Progress
   - On Hold
   - Resolved
   - Closed
- 
+    
+- ** 6.Service Level Agreements (SLAs)**
+    - Priority Levels & Resolution Times:
+      - P1: Critical(2 hours) - Company-wide issues which impact reveneue i.e., Network, Server, or VPN outages that affect all in-house and remote staff.
+      - P2: High(8 hours) - Department-specific issues, i.e., application errors, workstation issues, and email access issues.
+      - P3: Normal(12 hours) - Non-critical issues affecting the end-users, i.e., access requests, workstation problems, printer issues.
+      - P4: Low (24 hours) - For standard user/client requests, i.e., questions and minor changes.
+      
 ## 1. System Configuration
 The platform settings were configured via the Admin Panel. The purpose is to ensure consistency and standardization in the support environment.
 [*Admin Panel → Settings*]
@@ -77,17 +79,51 @@ Next, the Ticket Settings were configured as follows: [*Admin Panel → Settings
 
 ![osticket ticket settings](screenshots/osticket%20settings.png)
 
-## 2. Department Structure for Ticket Routing
+
+## 2. Roles & Permissions (Access Control)
+These 4 roles were assigned permissions based on their department to demonstrate user privilege and operational control [*Admin → Staff → Roles*]
+- **Helpdesk Technician (Tier 1 Support)**:  Can handle tickets assigned to the Technical Support Department only. No access to make advanced changes.
+- **Senior Technician (Tier 2 Support)**: Handles escalated queries assigned to the Technical Support Department only, without full access.
+- **IT Manager (Administrator Level)**:  Full Access to all permissions across all departments.
+- **Sales Executive**: Can handle tickets assigned to the Sales Department only.
+
+![Senior Tech Access](screenshots/Tier%202%20%20Ticket%20Permissions.png)
+
+![All roles osticket](screenshots/All%20roles%20osticket.png)
+
+## 3. Department Structure for Ticket Routing
 The structured departments were created under the Default Department: Support [*Admin → Agents → Departments*] - the Sales Team uses a separate mailbox.
 
 ![departments](screenshots/departments.png)
 
-### 2.1 Service Level Agreements (SLAs)
+The relevant teams were then created to facilitate ticket assignments. [*Admin → Agents → Teams*]
+
+![teams created](screenshots/teams%20created.png)
+
+## 4. Structured Help Topics
+
+To ensure that all new help topics are accurately assigned and categorized, a **Parent Topic** was assigned, and **Department** was assigned. The appropriate **Priority** and **SLA Plans** were configured, and the **Auto-Assign** was configured for the relevant department.  [*Admin → Manage → Help Topics*]
+
+![new topic](screenshots/new%20help%20topic.png)
+
+The end-user will then access the Support Centre to open a new ticket and select the appropriate help topic using the URL: http://localhost/osTicket/
+
+![support center topics](screenshots/end%20-user%20help%20topics.png)
+
+## 5. Ticket Workflow Configuration of Lifecycle Stages:**
+  - Open
+  - Assigned
+  - In Progress
+  - On Hold
+  - Resolved
+  - Closed
+
+## 6. Service Level Agreements (SLAs)
 The following SLAs were set and assigned to each department. [*Admin → Manage → SLA*]
 
 ![SLAs Set](screenshots/17%20SLAs%20Set.png)
   
-- **SLAs by Department**
+### 6.1 SLAs by Department
   - Technical Support → P2 – High (8 hours)
   - Network Support → P1 – Critical (2 hours)
   - Application Support → P2 – High (8 hours)
@@ -95,13 +131,13 @@ The following SLAs were set and assigned to each department. [*Admin → Manage 
 
 ![tech support SLA](screenshots/Tech%20Support%20SLA.png)
 
-### 2.2 Roles & Permissions (Access Control)
-These 4 roles were assigned permissions based on their department to demonstrate user privilege and operational control [*Admin → Staff → Roles*]
-- Helpdesk Technician (Tier 1 Support):  Can handle tickets assigned to the Technical Support Department only. No access to make advanced changes.
-- Senior Technician (Tier 2 Support): Handles escalated queries assigned to the Technical Support Department only, without full access.
-- IT Manager (Administrator Level):  Full Access to all permissions across all departments.
-- Sales Executive: Can handle tickets assigned to the Sales Department only.
 
-![Senior Tech Access](screenshots/Tier%202%20%20Ticket%20Permissions.png)
+## Final Considerations
+- User Session Timeout: The User Session Timeout* was changed from 30 minutes to 0 to avoid having to sign in again and encounter the error shown below;
+
+![tech support SLA](screenshots/Tech%20Support%20SLA.png)
+
+![tech support SLA](screenshots/Tech%20Support%20SLA.png)
+
 
 
