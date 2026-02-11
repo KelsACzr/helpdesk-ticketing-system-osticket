@@ -10,17 +10,17 @@ This section explains the post-installation configuration steps for osTicket, wh
 - Windows Server 2022 (21H2) | Build 20348.587
 
 ## Configuration Tasks
-- ** 1. System Configuration:** Company name, default department, ticket settings, date, and timezone configuration.
+- **1. System Configuration:** Company name, default department, ticket settings, date, and timezone configuration.
   
-- ** 2. Roles & Permissions:** user role assignment and department access configuration.
+- **2. Roles & Permissions:** user role assignment and department access configuration.
   
-- ** 3. Department Structure for Ticket Routing:**
+- **3. Department Structure for Ticket Routing:**
   -  Technical Support
   -  Network Support
   -  Application Support
   -  Sales
 
-- ** 4. Structured Help Topics** - the following topics were listed:
+- **4. Structured Help Topics** - the following topics were listed:
   - Password Reset
   - Email Issue
   - Network Outage
@@ -31,7 +31,7 @@ This section explains the post-installation configuration steps for osTicket, wh
   - General Inquiry
   - VPN Outage
 
-- ** 5. Ticket Workflow Configuration of Lifecycle Stages:**
+- **5. Ticket Workflow Configuration of Lifecycle Stages:**
   - Open
   - Assigned
   - In Progress
@@ -39,7 +39,7 @@ This section explains the post-installation configuration steps for osTicket, wh
   - Resolved
   - Closed
     
-- ** 6.Service Level Agreements (SLAs)**
+- **6.Service Level Agreements (SLAs)**
     - Priority Levels & Resolution Times:
       - P1: Critical(2 hours) - Company-wide issues which impact reveneue i.e., Network, Server, or VPN outages that affect all in-house and remote staff.
       - P2: High(8 hours) - Department-specific issues, i.e., application errors, workstation issues, and email access issues.
@@ -110,7 +110,7 @@ The end-user will then access the Support Centre to open a new ticket and select
 
 ![support center topics](screenshots/end%20-user%20help%20topics.png)
 
-## 5. Ticket Workflow Configuration of Lifecycle Stages:**
+## 5. Ticket Workflow Configuration of Lifecycle Stages:
   - Open
   - Assigned
   - In Progress
