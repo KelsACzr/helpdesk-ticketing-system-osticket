@@ -32,11 +32,11 @@ This section explains the post-installation configuration steps for osTicket, wh
   - VPN Outage
 
 - **5.Service Level Agreements (SLAs)**
-    - Priority Levels & Resolution Times:
-      - P1: Critical(2 hours) - Company-wide issues which impact reveneue i.e., Network, Server, or VPN outages that affect all in-house and remote staff.
-      - P2: High(8 hours) - Department-specific issues, i.e., application errors, workstation issues, and email access issues.
-      - P3: Normal(12 hours) - Non-critical issues affecting the end-users, i.e., access requests, workstation problems, printer issues.
-      - P4: Low (24 hours) - For standard user/client requests, i.e., questions and minor changes.
+    - **Priority Levels & Resolution Times:**
+      - **P1: Critical(2 hours)** - Company-wide issues which impact reveneue i.e., Network, Server, or VPN outages that affect all in-house and remote staff.
+      - **P2: High(8 hours)** - Department-specific issues, i.e., application errors, workstation issues, and email access issues.
+      - **P3: Normal(12 hours)** - Non-critical issues affecting the end-users, i.e., access requests, workstation problems, printer issues.
+      - **P4: Low (24 hours)** - For standard user/client requests, i.e., questions and minor changes.
      
 - **6. User Onboarding**
   - A new user [Jane Mollineau] was configured for the Tier 1 Technical Support Team.
@@ -76,7 +76,7 @@ Next, the Ticket Settings were configured as follows: [*Admin Panel → Settings
 
 
 ## 2. Roles & Permissions (Access Control)
-These 4 roles were assigned permissions based on their department to demonstrate user privilege and operational control [*Admin → Staff → Roles*]
+These 4 roles were assigned permissions based on their department to demonstrate user privilege and operational control [*Admin Panel → Agents → Roles*]
 - **Helpdesk Technician (Tier 1 Support)**:  Can handle tickets assigned to the Technical Support Department only. No access to make advanced changes.
 - **Senior Technician (Tier 2 Support)**: Handles escalated queries assigned to the Technical Support Department only, without full access.
 - **IT Manager (Administrator Level)**:  Full Access to all permissions across all departments.
@@ -87,17 +87,17 @@ These 4 roles were assigned permissions based on their department to demonstrate
 ![All roles osticket](screenshots/All%20roles%20osticket.png)
 
 ## 3. Department Structure for Ticket Routing
-The structured departments were created under the Default Department: Support [*Admin → Agents → Departments*] - the Sales Team uses a separate mailbox.
+The structured departments were created under the Default Department: Support [*Admin Panel → Agents → Departments*] - the Sales Team uses a separate mailbox.
 
 ![departments](screenshots/departments.png)
 
-The relevant teams were then created to facilitate ticket assignments. [*Admin → Agents → Teams*]
+The relevant teams were then created to facilitate ticket assignments. [*Admin Panel → Agents → Teams*]
 
 ![teams created](screenshots/teams%20created.png)
 
 ## 4. Structured Help Topics
 
-To ensure that all new help topics are accurately assigned and categorized, a **Parent Topic** was assigned, and **Department** was assigned. The appropriate **Priority** and **SLA Plans** were configured, and the **Auto-Assign** was configured for the relevant department.  [*Admin → Manage → Help Topics*]
+To ensure that all new help topics are accurately assigned and categorized, a **Parent Topic** was assigned, and **Department** was assigned. The appropriate **Priority** and **SLA Plans** were configured, and the **Auto-Assign** was configured for the relevant department.  [*Admin Panel → Manage → Help Topics*]
 
 ![new topic](screenshots/new%20help%20topic.png)
 
@@ -106,7 +106,7 @@ The end-user will then access the Support Centre to open a new ticket and select
 ![support center topics](screenshots/end%20-user%20help%20topics.png)
 
 ## 5. Service Level Agreements (SLAs)
-The following SLAs were set and assigned to each department. [*Admin → Manage → SLA*]
+The following SLAs were set and assigned to each department. [*Admin Panel → Manage → SLA*]
 
 ![SLAs Set](screenshots/17%20SLAs%20Set.png)
   
@@ -121,7 +121,7 @@ The following SLAs were set and assigned to each department. [*Admin → Manage 
 ## 6. User Onboarding
 
 **Credentials**
-- User 'Jane Mollineau' was created. [*Admin → Agents → Agents*]
+- User 'Jane Mollineau' was created. [*Admin Panel → Agents → Agents*]
 - Username: jmollineau
 - Password: Sent to the User's Email
 
@@ -133,8 +133,7 @@ The following SLAs were set and assigned to each department. [*Admin → Manage 
 
 ![jane access](screenshots/Jane%202.png)
 
-**Jane's Permissions**
-This account was configured for limited permissions to make any major changes. 
+**Jane's Permissions** This account was configured for limited permissions and is unable make any major changes in the osTicket environment. 
 
 ![jane permissions 1](screenshots/Jane%20Permissions%201.png)
 
@@ -142,12 +141,11 @@ This account was configured for limited permissions to make any major changes.
 
 ![jane permissions 3](screenshots/Jane%20Permissions%203.png)
 
-**Jane's Team Assignment**
-- Jane was assigned to the Team: "T1 Technical Support"
+**Jane's Team Assignment** Jane was assigned to the Team: "T1 Technical Support"
 ![jane team assign](screenshots/Jane%20Team%20Assignment%203.png)
 
 ## Final Considerations
-- User Session Timeout: the *User Session Timeout* was changed from 30 minutes to 0 to avoid having to sign in again and encounter the error shown below;
+User Session Timeout: the *User Session Timeout* was changed from 30 minutes to 0 to avoid having to sign in again and encounter the error shown below;
 
 ![osticket login error](screenshots/osticker%20login%20error.png)
 
