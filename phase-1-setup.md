@@ -11,7 +11,7 @@ This section explains the required prerequisites and installation process for se
 - Win Server Virtual Machine Setup.
 - Install IIS.
 - Install CGI (Common Gateway Interface) so IIS can communicate effectively with PHP.
-- Install PHP v8.3.39 and PHP Manager for IIS.
+- Install PHP v8.3.29 and PHP Manager for IIS.
 - Install Visual C++ Redistributable for PHP compilation and runtime environment.
 - Install MariaDB v12.1.2 and HeidiSQL(x64)
 - Install Rewrite for URL customization and redirection.
